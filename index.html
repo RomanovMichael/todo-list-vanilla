@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Todo</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section class="todo">
+        <div class="todo__container">
+          <div class="todo__content">
+            <div class="todo__head">
+              <h1 class="todo__title">TODO List</h1>
+            </div>
+            <div class="todo__form">
+              <form class="todo-form" id="todoForm">
+                <div class="todo-form__group">
+                  <input
+                    type="text"
+                    class="todo-form__input"
+                    id="todoInput"
+                    placeholder="What to do..."
+                  />
+                  <button type="submit" class="todo-form__btn">Add Task</button>
+                </div>
+              </form>
+            </div>
+            <div class="todo__search" id="todoSearch">
+              <div class="todo__search-input-wrap">
+                <div class="todo__search-icon">
+                  <svg
+                    enable-background="new 0 0 32 32"
+                    viewBox="0 0 32 32"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path
+                      d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"
+                      id="XMLID_223_"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  class="todo__search-input"
+                  id="todoSearchInput"
+                  placeholder="Search"
+                />
+              </div>
+              <div class="todo__notfound">Nothing found</div>
+            </div>
+            <div class="todo__list" id="todoList"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
